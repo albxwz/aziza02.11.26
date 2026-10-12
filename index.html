@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Азизаны узатуу тоюна чакыруу!">
+    <meta property="og:description" content="02.11.2026">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/pw/AP1GczOs8MsNpCUxGORuEljXrKDfKfMUKRrJdnHDr4hKN6Cx2JkgSZcHiqGQy6bmlFpiFc1a12VIPJcervAO2In9VzzRu8Al5xldwJq78_SxWqIqNZ41EiXktUXokGC1MLefyGwQXE7lPMLRWEa7ODP8BRt3=w933-h912-s-no-gm?authuser=0" >
+
+
+<link rel="stylesheet"  href="css.css">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Азизаны узатуу тоюна чакыруу!</title> 
+
+
+
+
+<style>
+    
+
+
+@media screen and (max-width: 1280px) {div.contentblock {width: 1200px;} } 
+@media screen and (max-width: 1140px) { div.contentblock {width: 1024px;} } 
+@media screen and (max-width: 992px) { div. contentblock {width: 970px;} } 
+
+
+
+
+
+
+.element-animation{ 
+    top: 0px; 
+    opacity: 0; 
+    position: relative; 
+} 
+.element-animation.element-show{ 
+position: relative; 
+top: 20px; 
+opacity: 1; 
+transition-duration: 1.4s; 
+}
+
+
+
+
+
+
+
+
+
+      .form-inner {
+   position: relative;
+}
+
+}
+.form-inner label {
+   display: block;
+   padding-left: 15px;
+   font-family: 'Roboto', sans-serif;
+   color: rgba(255, 255, 255, .6);
+   text-transform: uppercase;
+   font-size: 15px;
+padding: 0 15px;
+   margin: 10px 0 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #000000;
+  border: none;
+
+  transition: transform 0.3s ease;
+}
+
+/* Стили для кнопки с эффектом при нажатии */
+.btn {
+  transform: scale(1.1); /* Увеличиваем кнопку при активации */
+}
+
+
+
+.form-inner textarea {
+   width: 80%;
+   text-align: center;
+   margin-top: 5px;
+ 
+   border-radius: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: #FFFAEE;
+    border-color: #1d3f57  0.5px;
+    letter-spacing: 0.11em;
+ height: 30px;
+   font-family: 'Roboto', sans-serif;
+  
+}
+
+.form-inner input[type="submit"] {
+    background: linear-gradient(to top left, #694738 0%, #694738 100%);
+       width: 77%;
+height: 30PX;
+text-align: center;
+    border: 0;
+    border-bottom: 2px  #aaa;
+       border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #FFFAEE  ;
+    letter-spacing: 0.11em;
+   font-family: 'Roboto', sans-serif;
+  padding: 0 15px;
+   margin: 10px 0 15px;
+
+}
+.radio-group{
+  text-align: left;
+  width: 80%;
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #000000;
+
+}
+
+
+
+
+
+
+
+.conteiner{
+
+  background-size: 100%;
+overflow: hide;
+width: 100%;
+   height: 50%;
+
+}
+.countdown-container {
+    margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 0.7rem;
+      font-weight: 200;
+      line-height: 1.0;
+      -webkit-text-size-adjust: 80%;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+      display: flex;
+      justify-content: center;
+     background-color: none;
+}
+
+
+.countdown-item {
+      position: relative;
+      min-width: 40px;
+      margin-left: 10px;
+      margin-right: 10px;
+      padding-bottom: 10px;
+}
+
+    .countdown:not(:last-child)::after {
+      content: ':';
+      position: absolute;
+      right: -15px;
+
+    }
+
+
+.countdown-item span {
+       display: block;
+    font-size: 38px;
+    margin-bottom: 1px;
+    color: #563500;
+    border-radius: 5px;
+    padding: 5px;
+    animation: pulse 1s ease infinite alternate;
+}
+
+
+
+
+
+
+
+body{
+background-color: #fffffd;
+}
+</style>
+
+
+
+
+ <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+
+  </style>
+
+
+
+
+<style>
+/* ===== ВИДЕО МОДАЛЬДЫ ТЕРЕЗЕСІ ===== */
+.modal {
+    position: fixed;
+    inset: 0;
+    z-index: 999999;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #000;
+}
+
+/* Фондық видео */
+.modal video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Басыңыз PNG суреті */
+.start-image {
+    width: 70%;
+    max-width: 600px;
+    position: relative;
+    object-fit: contain;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Видео ойналып жатқанда суретті жасыру */
+.modal.playing .start-image {
+    display: none;
+}
+
+/* Модальды терезе ашық кезде скроллды өшіру */
+body.modal-open {
+    overflow: hidden !important;
+}
+</style>
+
+
+
+
+
+
+</head>
+<body>
+
+
+
+
+<div id="musicModal" class="modal">
+
+    <video
+        id="introVideo"
+        preload="auto"
+        playsinline
+        webkit-playsinline
+    >
+        <source src="yul.mp4" type="video/mp4">
+    </video>
+
+    <img
+        src="uyl.png"
+        id="playMusic"
+        class="start-image"
+        alt="Басыңыз"
+        style="width: 100%;"
+    >
+
+</div>
+
+
+
+
+<video autoplay muted loop playsinline webkit-playsinline 
+       style="position:fixed;top:0;left:0;width:100%;height:100%;object-fit:cover;z-index:-1;">
+  <source src="1011 (1).mp4" type="video/mp4">
+</video>
+
+
+
+<center>
+<div class="fade-in" id="content">
+<img src="uykyuk.png" style="width: 100%; " loading="eager">
+</div></center>
+
+
+
+<center>
+<div class="element-animation"> 
+<img src="tkiy.png" style="width: 100%; margin-top: 10px;">
+</div></center>
+
+
+<center>
+<div class="element-animation"> 
+<img src="uykuyl.png" style="width: 100%; margin-top: 10px;">
+</div></center>
+
+
+<center>
+<div class="element-animation"> <a href="https://go.2gis.com/UeWCL">
+<img src="j,jh,.png" style="width: 100%; margin-top: 10px;"></a>
+</div></center>
+
+
+
+
+<center>
+<div class="countdown-container" style="margin-top:30px;">
+    <div class="countdown-item" style="margin-bottom: 30px;">
+        <span id="days"></span>
+        <span style="font-size: 13px;text-align: center; color: #563500;">күн</span>
+    </div><h2 style="margin-top:3px; size: 30px; color: #563500;">:</h2>
+    <div class="countdown-item">
+        <span id="hours"></span>
+        <span style="font-size: 13px;text-align: center; color: #563500;">саат</span>
+    </div><h2 style="margin-top:3px; size: 30px; color: #563500;">:</h2>
+    <div class="countdown-item">
+        <span id="minutes"></span>
+        <span style="font-size: 13px;text-align: center;text-align: center; color: #563500;">мүнөт</span>
+    </div><h2 style="margin-top:3px; size: 30px; color: #563500;">:</h2>
+    <div class="countdown-item">
+        <span id="seconds"></span>
+        <span style="font-size: 13px;text-align: center; color: #563500;">секунд</span>
+    </div>
+</div>
+
+</center>
+
+
+
+
+
+<center>
+<div class="element-animation"> 
+<img src="fgjj.png" style="width: 100%; margin-top: 10px;">
+</div></center>
+
+
+
+
+
+
+<center>
+<div class="element-animation">
+<img src="ykyu.png" style="width: 100%;margin-top: 10px; "  >
+
+</div></center>
+
+
+
+<center style="margin-top: 30px;">
+<form class="transparent" method="post" id="form">
+  <div class="form-inner">
+    
+    <!-- Бірінші сұрақ -->
+    <div class="radio-group" required>
+      <p>Тойго катыша аласызбы?</p>
+      <input type="radio" id="question1_yes" name="name" value="Албетте, катышам" required>
+      <label for="question1_yes">Албетте, катышам</label><br>
+      
+  
+      <input type="radio" id="question1_no" name="name" value="катыша албайм" required>
+      <label for="question1_no">Тилекке каршы, катыша албайм</label>
+    </div>
+    <br>
+
+    <!-- Екінші сұрақ (жаңа нұсқада) -->
+    <div class="radio-group" required>
+      <p>Коноктордун саны</p>
+
+      <div style="display:flex;align-items:center;gap:14px;">
+        <button type="button" id="decrease" style="font-size:15px; border-radius: 50px; color: black; width: 60px; background-color: #FFFAEE;">−</button>
+        <span id="peopleCount" style="font-size:20px;min-width:20px;display:inline-block;text-align:center;">1</span>
+        <button type="button" id="increase" style="font-size:15px; border-radius: 50px; color: black; width: 60px; background-color: #FFFAEE;">+</button>
+      </div>
+
+      <!-- Нақты мәнді сақтау үшін жасырын input -->
+      <input type="hidden" name="choice" id="choice" value="1">
+    </div>
+    <br>
+
+    <textarea required
+      name="message"
+      maxlength="100"
+      id="message"
+      cols="30"
+      rows="4"
+      placeholder="аты"
+    ></textarea>
+
+    <input type="submit" value="Жиберүү" style="color:white;" class="btn">
+  </div>
+</form>
+</center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<center>
+<div class="element-animation"> 
+<img src="rtjtyj.png" style="width: 100%;margin-top: 30px; "  >
+
+</div></center>
+
+
+
+<!-- ФОНДЫҚ МУЗЫКА -->
+<audio id="backgroundMusic" loop preload="auto">
+    <source src="ytku.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+(function () {
+    // БАПТАУЛАР
+    const SPEED_PX_PER_SEC = 100;
+    const RESTART_DELAY_MS = 3000;
+    const AUTOSCROLL_START_DELAY_MS = 7000;
+
+    // ЭЛЕМЕНТТЕР
+    const modal = document.getElementById("musicModal");
+    const introVideo = document.getElementById("introVideo");
+    const playButton = document.getElementById("playMusic");
+    const audio = document.getElementById("backgroundMusic");
+
+    // БАСТАПҚЫ КҮЙ
+    let started = false;
+    let pageOpened = false;
+    let isRunning = false;
+    let resumeTimer = null;
+    let startTimer = null;
+    let rafId = null;
+    let lastTs = 0;
+    let accum = 0;
+
+    // МОДАЛЬ АШЫҚ КЕЗДЕ СКРОЛЛДЫ БҰҒАТТАУ
+    document.body.classList.add("modal-open");
+    document.body.style.overflow = "hidden";
+    document.documentElement.style.scrollBehavior = "auto";
+    document.body.style.scrollBehavior = "auto";
+
+    // ҚАУІПСІЗ СКРОЛЛ
+    function safeScrollBy(step) {
+        window.scrollBy(0, step);
+    }
+
+    function atBottom() {
+        const maxScroll = Math.max(
+            document.documentElement.scrollHeight,
+            document.body.scrollHeight
+        ) - window.innerHeight;
+
+        const y = window.scrollY ||
+            document.documentElement.scrollTop ||
+            document.body.scrollTop || 0;
+
+        return y >= maxScroll - 1;
+    }
+
+    // АВТОСКРОЛЛ ЦИКЛІ
+    function loop(ts) {
+        rafId = null;
+
+        if (pageOpened && isRunning) {
+            if (!lastTs) lastTs = ts;
+
+            const dt = Math.min(ts - lastTs, 100);
+            lastTs = ts;
+
+            accum += (SPEED_PX_PER_SEC * dt) / 1000;
+
+            const step = Math.floor(accum);
+
+            if (step >= 1) {
+                accum -= step;
+
+                if (atBottom()) {
+                    stopAuto();
+                    return;
+                }
+
+                safeScrollBy(step);
+            }
+        } else {
+            lastTs = ts;
+        }
+
+        if (pageOpened) {
+            rafId = requestAnimationFrame(loop);
+        }
+    }
+
+    function startAuto() {
+        if (!pageOpened) return;
+
+        isRunning = true;
+
+        if (!rafId) {
+            lastTs = 0;
+            rafId = requestAnimationFrame(loop);
+        }
+    }
+
+    function stopAuto() {
+        isRunning = false;
+        lastTs = 0;
+    }
+
+    function restartAfterDelay() {
+        if (!pageOpened) return;
+
+        clearTimeout(resumeTimer);
+        stopAuto();
+
+        resumeTimer = setTimeout(function () {
+            startAuto();
+        }, RESTART_DELAY_MS);
+    }
+
+    // ПАЙДАЛАНУШЫ ӘРЕКЕТТЕРІ
+    function onInteract() {
+        if (!pageOpened) return;
+        restartAfterDelay();
+    }
+
+    window.addEventListener("wheel", onInteract, {
+        passive: true
+    });
+
+    window.addEventListener("touchstart", onInteract, {
+        passive: true
+    });
+
+    window.addEventListener("touchmove", onInteract, {
+        passive: true
+    });
+
+    window.addEventListener("mousedown", onInteract, {
+        passive: true
+    });
+
+    window.addEventListener("keydown", onInteract);
+
+    document.addEventListener("visibilitychange", function () {
+        if (!pageOpened) return;
+
+        if (document.hidden) {
+            stopAuto();
+            clearTimeout(resumeTimer);
+        } else {
+            restartAfterDelay();
+        }
+    });
+
+    // PNG СУРЕТІН БАСҚАНДА ВИДЕОНЫ БАСТАУ
+    playButton.addEventListener("click", async function () {
+        if (started) return;
+
+        started = true;
+        playButton.style.pointerEvents = "none";
+
+        try {
+            introVideo.muted = false;
+            introVideo.currentTime = 0;
+
+            await introVideo.play();
+
+            modal.classList.add("playing");
+
+        } catch (error) {
+            started = false;
+            playButton.style.pointerEvents = "auto";
+
+            console.error(
+                "Видеоны ойнату мүмкін болмады:",
+                error
+            );
+        }
+    });
+
+    // ВИДЕО ТОЛЫҚ АЯҚТАЛҒАНДА
+    introVideo.addEventListener("ended", function () {
+        if (pageOpened) return;
+
+        pageOpened = true;
+
+        // МОДАЛЬДЫ ЖАБУ
+        modal.style.display = "none";
+        document.body.classList.remove("modal-open");
+        document.body.style.overflow = "";
+
+        // МУЗЫКАНЫ ҚОСУ
+        audio.volume = 1;
+
+        audio.play().catch(function (error) {
+            console.warn(
+                "Музыканы автоматты ойнату бұғатталды:",
+                error
+            );
+        });
+
+        // 7 СЕКУНДТАН КЕЙІН АВТОСКРОЛЛДЫ БАСТАУ
+        startTimer = setTimeout(function () {
+            startAuto();
+        }, AUTOSCROLL_START_DELAY_MS);
+    });
+
+    // ВИДЕО ҚАТЕСІ
+    introVideo.addEventListener("error", function () {
+        console.error(
+            "yul.mp4 файлын жүктеу мүмкін болмады. Файл жолын тексер."
+        );
+    });
+
+})();
+</script>
+
+
+
+
+  <script async>
+
+
+
+
+const URL_APP = "https://script.google.com/macros/s/AKfycbwQKbn_orPO9aQ8KweFTRErtIKTUayZ3euMrINyx5ooA2rxJ8Ajvkx-iyQFGu2c7wRL/exec";
+
+const form = document.querySelector("#form");
+form.action = URL_APP;
+
+// --- Екінші сұрақ логикасы ---
+const decreaseBtn = document.querySelector("#decrease");
+const increaseBtn = document.querySelector("#increase");
+const countDisplay = document.querySelector("#peopleCount");
+const hiddenChoice = document.querySelector("#choice");
+
+let count = 1;
+
+decreaseBtn.addEventListener("click", () => {
+  if (count > 1) {
+    count--;
+    countDisplay.textContent = count;
+    hiddenChoice.value = count;
+  }
+});
+
+increaseBtn.addEventListener("click", () => {
+  count++;
+  countDisplay.textContent = count;
+  hiddenChoice.value = count;
+});
+
+// --- Форма жіберу ---
+form.addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+
+  const name = document.querySelector("[name=name]:checked");
+  const choice = document.querySelector("[name=choice]");
+  const message = document.querySelector("[name=message]");
+
+  let details = {
+    name: name ? name.value : '',
+    choice: choice ? choice.value : '',
+    message: message.value.trim(),
+  };
+
+  let formBody = [];
+  for (let property in details) {
+    let encodedKey = encodeURIComponent(property);
+    let encodedValue = encodeURIComponent(details[property]);
+    formBody.push(encodedKey + "=" + encodedValue);
+  }
+  formBody = formBody.join("&");
+
+  // Форма тазалау
+  if (name) name.checked = false;
+  count = 1;
+  countDisplay.textContent = count;
+  hiddenChoice.value = count;
+  message.value = '';
+
+  alert('Жообуңузга рахмат!');
+
+  fetch(URL_APP, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+    },
+    mode: "no-cors",
+    body: formBody,
+  }).catch((err) => {
+    console.error('Error:', err);
+    alert("Қате орын алды!");
+  });
+});
+
+
+
+
+
+
+
+
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      var elements = document.querySelectorAll(".fade-in");
+      elements.forEach(function(element) {
+        observer.observe(element);
+      });
+    });
+  </script>
+
+
+<script >
+    
+
+     function onEntry(entry) { 
+      entry.forEach(change => { 
+        if (change.isIntersecting) { 
+         change.target.classList.add('element-show'); 
+         
+        } 
+      }); 
+    } 
+        let options = { 
+      threshold: [0.5] }; 
+    let observer = new IntersectionObserver(onEntry, options); 
+    let elements = document.querySelectorAll('.element-animation'); 
+     
+    for (let elm of elements) { 
+      observer.observe(elm); 
+    }
+
+
+</script>
+
+
+
+
+
+
+<script async>
+document.addEventListener('DOMContentLoaded', function() {
+    function updateCountdown() {
+        const endDate = new Date("November 2, 2026 16:00:00").getTime();
+        const now = new Date().getTime();
+        const distance = endDate - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+
+        if (distance < 0) {
+            clearInterval(timerInterval);
+            document.getElementById("days").innerText = "00";
+            document.getElementById("hours").innerText = "00";
+            document.getElementById("minutes").innerText = "00";
+            document.getElementById("seconds").innerText = "00";
+        }
+    }
+
+    const timerInterval = setInterval(updateCountdown, 1000);
+    updateCountdown();
+});
+</script>
+
+
+
+
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https: //fonts.googleapis.com/css2?family= Piazzolla :wght@100 & display=swap" rel="stylesheet">
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" async></script>
+</body>
+</html>
